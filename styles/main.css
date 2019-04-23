@@ -11,6 +11,7 @@ html {
 /** Fonts **/
 * {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 h1 {
@@ -40,8 +41,8 @@ header {
 nav ul {
     margin: 0 auto;
     padding: 20px;
-    display: inline; /** display nav ul inline with header **/
-    align-items: right;
+    display: inline ; /** display nav ul inline with header **/
+    
 }
 
 nav ul li{
