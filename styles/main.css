@@ -5,7 +5,8 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: inherit; /** inherit box sizing from parent for all elements unless specified otherwise **/
+    
 }
 
 /** Fonts **/
@@ -59,6 +60,11 @@ nav ul li a {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+/* Links - change color on hover */
+nav a:hover { 
+    color: pink;
+    }
+
 /** Body Styles **/
 
 .row {
@@ -77,10 +83,24 @@ nav ul li a {
 }
 
 .col img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto; 
 }
 
+time {
+    display: block;
+} 
+
+.colsub {
+        padding: 0px 20px 20px 20px;;
+        margin: 1%;
+        float: left;
+        width: 90%;  
+    }
+
+.colsub img {
+        max-width: 50%;
+    }
 /** Footer Style **/
 
 footer {
