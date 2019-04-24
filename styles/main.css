@@ -11,7 +11,7 @@ html {
 
 /** Fonts **/
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /** set default font to Roboto **/
     line-height: 1.5;
 }
 
@@ -35,15 +35,26 @@ p {
 header {
     background: black;
     color: white;
-    padding: 20px;
+    display: flex;
+    align-content: center;
 }
+
+header img {
+    
+    max-height: 160px;
+    }
+
+header h1 {   
+    padding: 0px;
+    }
+
+
 
 /** Nav Bar **/
 nav ul {
     margin: 0 auto;
     padding: 20px;
     display: inline ; /** display nav ul inline with header **/
-    
 }
 
 nav ul li{
@@ -62,17 +73,17 @@ nav ul li a {
 
 /* Links - change color on hover */
 nav a:hover { 
-    color: pink;
+    color: rgb(223, 74, 99);
     }
+
+a img:hover {
+    opacity: 0.8;
+}
 
 /** Body Styles **/
 
-.row {
-    
-}
-
-.row h2 {
-    padding: 0px 0px 0px 22px;
+.row-h2 {
+    padding: 0px 0px 0px 20px;
 }
 
 .col {
@@ -83,7 +94,7 @@ nav a:hover {
 }
 
 .col img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto; 
 }
 
@@ -99,7 +110,7 @@ time {
     }
 
 .colsub img {
-        max-width: 50%;
+        max-width: 70%;
     }
 /** Footer Style **/
 

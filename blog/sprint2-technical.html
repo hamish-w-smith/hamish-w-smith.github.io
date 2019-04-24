@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sprint 2 Technical</title>
+    <meta charset="utf-8">
+    <!--Font Links-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+  </head>
+
+  <body>
+      <header>
+        <img src="../img/logo/logo_transparent.png" alt="transparent Hamish Smith logo">  
+        <h1>A Blog of Continuous Imprivmntes</h1> 
+      </header>
+
+      <nav>
+        <ul>
+            <li> <a href="../index.html">Home</a> </li>
+            <li> <a href="../projects.html">Projects</a> </li>
+            <li> <a href="../about-me.html">About Me</a> </li>
+        </ul>
+      </nav>
+     
+      <div class="row">
+        <h2 class="row-h2">Sprint 2 Technical Articles</h2>
+        <div class="col">
+                <article>
+                        <h3>Best practice for classes and id usage</h3>
+                        <time datetime="2019-04-24T12:00">24 April 2019</time>
+                        <img src="../img/class-v-id.png" alt="picture of classes and id">
+                        <p>Classes and ids allow you to give certain properties, for example a font style in an element, a special property.</p>
+                        <p>Classes are general purpose, and in the css style sheet, to select a class, you use a . period. </p>
+                        <p>ids are unique little unicorns. ids can only be used once within an html page. They are useful for making links within a document. So for example, if you wanted to link to a certain paragraph on a certain webpage, ids can do that. ids also come in handy when linking things with javascript.</p>
+                        <p>Classes should generally be used for styling as best practice</p>
+                        <p>ids should only be used for unique operations. <a href="https://css-tricks.com/the-difference-between-id-and-class/">Css-tricks</a> does a good job of explaining these hooks</p>
+                        
+                      </article>
+
+          <article>
+                <h3>Content, padding, margins and borders oh my</h3>
+                <time datetime="2019-04-23T12:00">23 April 2019</time>
+                <img src="../img/burger.jpg" alt="hamburger">
+                <p>Margin, border and padding describe the spacing around a piece of content. Lets get analogous:</p>
+                <ul>
+                  <li>The centre piece of your burger, your patty or houlumi is the content.</li>
+                  <li>Your padding is your pickels, it goes around your patty. I like a lot of pickles so imagine it is on all sides.</li>
+                  <li>Then you have your buns, your border surround your pickles.</li>
+                  <li>And next you have your mandibles or margin right around the whole thing.</li>
+                </ul>
+                <p>Padding can be set in absolute units of pixels, or in relative units like percentage width. The best way to work out what these are like is to try it out: </p>
+                <p>So let's recap:</p>
+                <ul>
+                  <li>patty = content</li>
+                  <li>pickes = padding</li>
+                  <li>buns = border</li>
+                  <li>mandibles = margin</li>
+                </ul>
+                <img src="../img/boxmodel.jpg" alt="box model">
+                
+              </article>
+        </div>
+
+        <div class="col">
+          <article>
+            <h3>What are the differences between relative, absolute, and fixed positioning?</h3>
+            <time datetime="2019-04-24T19:00">24 April 2019</time>
+            <img src="../img/alcohol-alcoholic-beverage-bar-51979.jpg" alt="glass of booze">
+            <p>Hold on there because this might make you want a strong drink, it did reward myself with one after writing this. With css, the positioning of content is usually by default relative to each other. </p>
+            <p>Giving a parent element a position property of relative, will tell all child elements with that parent element, to position themselves relative to the the parent. </p>
+            <p>This </span><a href="https://www.youtube.com/watch?v=P6UgYq3J3Qs">video by Kevin</a> does a pretty good job of explaining how you can use the positioning in about 7 minutes.</p>
+        </article>
+
+          <article>
+              <h3>What does it mean to display inline vs inline blocks?</h3>
+              <time datetime="2019-04-24T20:00">24 April 2019</time>
+              <img src="../img/Greek_Phalanx.jpg" alt="picture">
+              <p>Elements come in two main formations. Some like to line up in blocks like a greek phalanx, and some like to stretch out in a long line, like the British fighting napolean at Waterloo. </p>
+              <p>Divs and other types of elements are block elements by default, and will line up one on top of each other, whereas spans will stretch out and wrap around to the next line. </p>
+              <p>Inline-blocks will line up beside each other, then wrap around like a paragraph. See <a href="http://dustwell.com/div-span-inline-block.html">Dustin Boswell's post </a>for a more detailed breakdown of this topic.</p>
+              
+            </article>
+        </div>
+            
+      </div>          
+
+      <footer>
+          Website by Hamish Smith
+      </footer>
+  </body>
+</html>
