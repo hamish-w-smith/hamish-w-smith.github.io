@@ -80,10 +80,26 @@ a img:hover {
     opacity: 0.85;
 }
 
+a {
+    text-decoration: none;
+}
+
+a h3 {
+    color: black;
+}
+
+a time {
+    color: black;
+}
+
 /** Body Styles **/
 
 .row-h2 {
     padding: 0px 0px 0px 20px;
+}
+
+.row time {
+    padding-left: 20px;
 }
 
 .col {
@@ -112,7 +128,13 @@ time {
 .colsub img {
         max-width: 70%;
     }
-/** Footer Style **/
+
+article {
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+
+    /** Footer Style **/
 
 footer {
     clear: both; /** clear all float lefts and right and display below **/
