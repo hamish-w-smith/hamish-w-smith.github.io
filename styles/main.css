@@ -98,8 +98,12 @@ a time {
     padding: 0px 0px 0px 20px;
 }
 
+.col time {
+    padding-left: 0px;
+}
+
 .row time {
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .col {
