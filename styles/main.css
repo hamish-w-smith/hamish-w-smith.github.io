@@ -6,8 +6,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit; /** inherit box sizing from parent for all elements unless specified otherwise **/
-    
 }
+
 
 /** Fonts **/
 * {
@@ -26,33 +26,54 @@ h4 {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
+body {
+    display: grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-areas:
+      "header header header"
+      ". section-head1 ."
+      ". tech ."
+      ". section-head2 ."
+      ". core ."
+      ". footer ."
+  }
 
 /** Header **/
 header {
     background: black;
-    color: white;
-    display: flex;
-    align-content: center;
+    width: 100%; 
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr 1fr;
+    grid-template-areas:
+    'nav logo title .'
 }
 
-header img {
-    
-    max-height: 160px;
-    }
+.logo img { 
+    height: 160px;
+    width: 160px;
+    display: inline-block;
+    grid-area: logo;
+}
 
 header h1 {   
-    padding: 0px;
-    }
-
-
+    color: white;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 20px;
+    grid-area: title;
+}
 
 /** Nav Bar **/
+nav {
+    grid-area: nav;
+    position: relative;
+    padding-top: 125px;
+}
+
 nav ul {
     margin: 0 auto;
+    margin-left: 2em;
     padding: 0px;
     display: inline ; /** display nav ul inline with header **/
 }
@@ -71,10 +92,11 @@ nav ul li a {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-/* Links - change color on hover */
 nav a:hover { 
     color: rgb(223, 74, 99);
     }
+
+/** Body Styles **/
 
 a img:hover {
     opacity: 0.85;
@@ -88,49 +110,56 @@ a h3 {
     color: black;
 }
 
-a time {
-    color: black;
-}
-
-/** Body Styles **/
-
-.row-h2 {
-    padding: 0px 0px 0px 20px;
-}
-
 time {
     display: block;
 }
 
-main {
+.section-head1 {
+    grid-area: section-head1;
+}
+
+.section-head2 {
+    grid-area: section-head2;
+}
+
+.tech {
     display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-auto-rows: minmax(auto, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 0.5em;
+    grid-area: tech;
+}
+
+.core {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 0.5em;
+    grid-area: core;
+}
+
+.col-title {
     
 }
 
-.content {
-    display: inline-block;
-    float: left;
-    
-}
+article img {
 
-img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 article {
+    background-color: lightgrey;
     display: block;
     border-bottom: solid 1px;
     padding-bottom: 10px;
-    float: left;
-    max-width: 200px;
+    
 }
 
     /** Footer Style **/
 
 footer {
     clear: both; /** clear all float lefts and right and display below **/
+    font-size: 0.8em;
+    grid-area: footer;
 }
 
