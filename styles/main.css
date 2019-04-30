@@ -26,6 +26,8 @@ h4 {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+/** Body Grid **/
+
 body {
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
@@ -44,36 +46,39 @@ header {
     width: 100%; 
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr 160px 1fr 1fr;
+    grid-template-columns: 250px 2fr 1fr;
     grid-template-areas:
-    'nav logo title .'
+    'logo title .'
+    'nav . .'
+}
+
+header .logo {
+    margin: auto;
+    grid-area: logo;
 }
 
 .logo img { 
     height: 160px;
     width: 160px;
-    display: inline-block;
-    grid-area: logo;
+    
 }
 
 header h1 {   
     color: white;
     display: inline-block;
     margin: auto;
-    padding-bottom: 20px;
+    
     grid-area: title;
 }
 
 /** Nav Bar **/
 nav {
     grid-area: nav;
-    position: relative;
-    padding-top: 125px;
 }
 
 nav ul {
     margin: 0 auto;
-    margin-left: 2em;
+    margin-left: 1.5em;
     padding: 0px;
     display: inline ; /** display nav ul inline with header **/
 }
@@ -124,17 +129,17 @@ time {
 
 .tech {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    
+    grid-gap: 1em;
     grid-area: tech;
 }
 
 .core {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    
+    grid-gap: 1em;
     grid-area: core;
 }
 
@@ -143,15 +148,19 @@ time {
 }
 
 article img {
-
-    max-width: 250px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 article {
-    background-color: lightgrey;
+    padding: 0.5em;
     display: block;
-    border-bottom: solid 1px;
-    padding-bottom: 10px;
+    border: solid 0.5px;
+}
+
+article h3 {
+    width: 100%;
     
 }
 
