@@ -31,10 +31,12 @@ h4 {
 body {
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
+    grid-auto-flow: row dense;
     grid-template-areas:
       "header header header"
       ". section-head1 ."
       ". tech ."
+      ". large ."
       ". section-head2 ."
       ". core ."
       ". footer ."
@@ -49,7 +51,7 @@ header {
     grid-template-columns: 250px 2fr 1fr;
     grid-template-areas:
     'logo title .'
-    'nav . .'
+    'nav nav nav'
 }
 
 header .logo {
@@ -74,6 +76,7 @@ header h1 {
 /** Nav Bar **/
 nav {
     grid-area: nav;
+    background-color: white;
 }
 
 nav ul {
@@ -95,6 +98,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-family: 'Roboto Slab', sans-serif;
+    font-size: 1em;
 }
 
 nav a:hover { 
@@ -129,7 +133,7 @@ time {
 
 .tech {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,30vw));
     
     grid-gap: 1em;
     grid-area: tech;
@@ -137,14 +141,18 @@ time {
 
 .core {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,30vw));
     
     grid-gap: 1em;
     grid-area: core;
 }
 
-.col-title {
+div.large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,80vw));
     
+    grid-gap: 1em;
+    grid-area: large;
 }
 
 article img {
@@ -162,6 +170,10 @@ article {
 article h3 {
     width: 100%;
     
+}
+
+.social-link img {
+    max-width: 50px;
 }
 
     /** Footer Style **/
