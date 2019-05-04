@@ -36,9 +36,9 @@ body {
       "header header header"
       ". section-head1 ."
       ". tech ."
-      ". large ."
       ". section-head2 ."
       ". core ."
+      ". large ."
       ". footer ."
   }
 
@@ -156,15 +156,15 @@ div.large {
 }
 
 article img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 30vw;
+    max-height: 50vh;
     height: auto;
 }
 
 article {
     padding: 0.5em;
     display: block;
-    border: solid 0.5px;
+    border-bottom: solid 1px;
 }
 
 article h3 {
