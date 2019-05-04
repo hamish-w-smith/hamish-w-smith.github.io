@@ -8,53 +8,66 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--Style Sheets-->
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
-      <header>
-        <img src="img/logo/logo_transparent.png" alt="transparent Hamish Smith logo">  
-        <h1>A Blog of Continuous Imprivmntes</h1> 
+    
+    <header>
+      <div class="logo">
+        <img src="img/logo/logo_transparent.png" alt="transparent Hamish Smith logo">
+      </div>
+      <h1>Blog</h1>
+      <nav>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="projects.html">Projects</a> </li>
+            <li> <a href="about-me.html">About Me</a> </li>
+          </ul>
+        </nav>
       </header>
 
-      <nav>
-          <ul>
-              <li> <a href="index.html">Home</a> </li>
-              <li> <a href="projects.html">Projects</a> </li>
-              <li> <a href="about-me.html">About Me</a> </li>
-             </ul>
-      </nav>
-     
-      <div class="row">
-        <div class="col">
-          <h2>Sprint Technical Articles</h2>
-          <a href="blog/sprint2-technical.html">
+      <h2 class="section-head1">Technical Articles</h2> 
+      <div class="tech"> 
+        
+        <article>
+          <h3>Sprint 3 Technical</h3>
+          <time datetime="2019-04-24T12:00">Date</time>
+          <a href="blog/sprint2-technical.html"><img src="https://fillmurray.com/200/100" alt="picture an athlete on start line"></a>
+          <p>abcd</p>
+        </article>
+
           <article>
             <h3>Sprint 2 Technical</h3>
             <time datetime="2019-04-24T12:00">24 April 2019</time>
             <a href="blog/sprint2-technical.html"><img src="img/athlete-body-cinder-track-4078.jpg" alt="picture an athlete on start line"></a>
             <p>Description of some fundamental css topics.</p>
-          </a>
           </article>
-
+         
           <article>
               <h3>Sprint 1 Technical</h3>
               <time datetime="2019-04-23T12:00">23 April 2019</time>
               <a href="blog/sprint1-technical.html"><img src="img/athletes-black-and-white-black-and-white-34514.jpg" alt="athletes sprint start in black and white"></a>
               <p>An elementary page</p>
-              
             </article>
-        </div>
 
-        <div class="col">
-          <h2>Sprint Core Skills Articles</h2>
+        </div>
+        <h2 class="section-head2">Core Skills Articles</h2>
+        <div class="core">
+          
+          <article>
+            <h3>Sprint 3 - Core</h3>
+            <time datetime="2019-04-25T12:00">Date</time>
+            <a href="blog/sprint3-core.html"> <img src="https://www.placecage.com/c/200/150" alt="chess"></a>
+            <p>abcd</p> 
+          </article>
+
           <article>
             <h3>Sprint 2 - Learning Plan</h3>
             <time datetime="2019-04-25T12:00">25 April 2019</time>
             <a href="blog/sprint2-core.html"> <img src="img/board-game-businessman-challenge-1040157.jpg" alt="chess"></a>
-            <p>Working learning plan for Dev Academy.</p>
-            
+            <p>Working learning plan for Dev Academy.</p> 
           </article>
 
           <article>
@@ -62,11 +75,9 @@
               <time datetime="2019-04-25T12:00">25 April 2019</time>
               <a href="blog/sprint1-core.html"> <img src="img/blur-books-close-up-159866.jpg" alt="books"></a>
               <p>Reflections on personal values.</p>
-              
             </article>
+
         </div>
-            
-      </div>          
 
       <footer>
           Website by Hamish Smith | Images from pexels.com unless otherwise attributed.
