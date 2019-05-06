@@ -133,7 +133,7 @@ time {
 
 .tech {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,30vw));
+    grid-template-columns: repeat(auto-fit, minmax(200px,300px));
     
     grid-gap: 1em;
     grid-area: tech;
@@ -141,7 +141,7 @@ time {
 
 .core {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,30vw));
+    grid-template-columns: repeat(auto-fit, minmax(200px,300px));
     
     grid-gap: 1em;
     grid-area: core;
@@ -149,14 +149,14 @@ time {
 
 div.large {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,80vw));
+    grid-template-columns: repeat(auto-fit, minmax(300px,80vw));
     
     grid-gap: 1em;
     grid-area: large;
 }
 
 article img {
-    max-width: 30vw;
+    max-width: 300px;
     max-height: 50vh;
     height: auto;
 }
